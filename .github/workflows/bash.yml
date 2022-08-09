@@ -9,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: run bash command
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
       - run: |
-          npm install
+          echo $MY_SECRET
