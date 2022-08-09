@@ -10,6 +10,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          echo "Hi"
-          echo "Ayman"
-          echo "Alshanqiti"
+          printenv
